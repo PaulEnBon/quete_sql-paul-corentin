@@ -1,0 +1,16 @@
+
+
+
+SELECT * FROM vehicule;
+
+
+SELECT * FROM vehicule 
+WHERE etat = 'Disponible';
+
+
+SELECT * FROM vehicule 
+WHERE ville = 'Lyon';
+
+
+SELECT * FROM vehicule 
+WHERE autonomie_km > 400;
