@@ -1,12 +1,4 @@
-
-
-SELECT * FROM vehicule 
-ORDER BY autonomie_km DESC;
-
-
-SELECT * FROM vehicule 
-WHERE etat = 'Disponible' 
-ORDER BY ville ASC, marque ASC;
-
-SELECT * FROM client 
-ORDER BY nom ASC, prenom ASC;
+SELECT c.nom, c.prenom, v.modele, l.date_debut
+FROM location l
+JOIN client c ON l.id_client = c.id_client
+JOIN vehicule v ON l.id_vehicule = v.id_vehicule;
